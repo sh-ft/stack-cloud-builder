@@ -8,4 +8,19 @@ RUN stack --resolver lts-6.4 build classy-prelude time text bytestring container
       lens lens-aeson ig conduit-combinators http-conduit http-types servant-server wai wai-extra warp flock \
       directory strict random-fu random-extras random-source async hspec scientific cassava concurrent-extra retry
 
+RUN \
+   apt-get -y update && \
+   apt-get -y install apt-transport-https ca-certificates curl \
+       # These are necessary for add-apt-respository
+       software-properties-common python-software-properties && \
+   curl -fsSL https://yum.dockerproject.org/gpg | sudo apt-key add - && \
+   apt-key fingerprint 58118E89F3A912897C070ADBF76221572C52609D && \
+   add-apt-repository \
+       "deb https://apt.dockerproject.org/repo/ \
+       ubuntu-$(lsb_release -cs) \
+       main" && \
+   apt-get -y update
+ARG DOCKER_VERSION=17.05.0~ce-0~ubuntu-xenial
+RUN apt-get -y install docker-engine=${DOCKER_VERSION}
+
 ENTRYPOINT ["stack"]
