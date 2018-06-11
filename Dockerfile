@@ -2,6 +2,9 @@ FROM fpco/stack-build:lts-11.10
 
 RUN stack setup --resolver lts-11.10
 
+RUN stack --resolver lts-11.10 build foundation directory text time counduit bloodhound http-client uuid aeson
+    servant-server wai wai-extra warp
+
 RUN \
    apt-get -y update && \
    apt-get -y install apt-transport-https ca-certificates curl \
