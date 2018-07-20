@@ -3,10 +3,11 @@ FROM fpco/stack-build:lts-11.10
 RUN stack setup --resolver lts-11.10
 
 RUN stack --resolver lts-11.10 build classy-prelude time text bytestring containers unordered-containers transformers \
-      either resourcet resource-pool monad-control persistent persistent-postgresql persistent-template esqueleto \
-      monad-logger uuid path-pieces http-api-data random data-default aeson aeson-better-errors aeson-casing \
-      lens lens-aeson ig conduit-combinators http-conduit http-types servant-server wai wai-extra warp flock \
-      directory strict random-fu random-extras random-source async hspec scientific cassava concurrent-extra retry
+      either resourcet-1.1.11 resource-pool monad-control persistent-2.7.3.1 persistent-postgresql-2.6.3 \
+      persistent-template esqueleto-2.5.3 monad-logger uuid path-pieces http-api-data random data-default aeson \
+      aeson-better-errors aeson-casing lens lens-aeson conduit-combinators http-conduit-2.2.4 http-types \
+      servant-server wai wai-extra warp flock-0.3.1.8 directory strict random-fu random-extras-0.19 random-source \
+      async hspec scientific cassava concurrent-extra-0.7.0.10 retry conduit-1.2.13.1 conduit-extra-1.2.3.2
 
 RUN \
    apt-get -y update && \
