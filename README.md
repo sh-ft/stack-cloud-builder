@@ -1,0 +1,3 @@
+```
+$ stack ls dependencies --separator -
+```
