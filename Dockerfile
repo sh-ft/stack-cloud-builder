@@ -16,7 +16,7 @@ RUN stack --resolver lts-12.26 build Cabal-2.2.0.1 HTTP-4000.3.12 HUnit-1.6.0.0 
   data-default-instances-containers-0.0.1 data-default-instances-dlist-0.0.1 data-default-instances-old-locale-0.0.1 \
   deepseq-1.4.3.0 directory-1.3.1.5 distributive-0.5.3 dlist-0.8.0.5 dlist-instances-0.1.1.1 easy-file-0.2.2 \
   either-5.0.1 entropy-0.4.1.4 erf-2.0.0.0 errors-2.3.0 esqueleto-2.7.0 exceptions-0.10.0 fast-logger-2.4.11 \
-  file-embed-0.0.10.1 filepath-1.4.2 flexible-defaults-0.0.2 flock-0.3.1.8 free-5.0.2 ghc-boot-th-8.4.4 ghc-prim-0.5.2.0 \
+  file-embed-0.0.10.1 filepath-1.4.2 flexible-defaults-0.0.2 flock-0.3.1.8 free-5.0.2 ghc-prim-0.5.2.0 \
   happy-1.19.9 hashable-1.2.7.0 haskell-src-exts-1.20.3 haskell-src-meta-0.8.0.3 hedis-0.10.10 hourglass-0.2.12 \
   hspec-2.5.5 hspec-core-2.5.5 hspec-discover-2.5.5 hspec-expectations-0.8.2 http-api-data-0.3.8.1 http-client-0.5.14 \
   http-client-tls-0.3.5.3 http-conduit-2.3.2 http-date-0.0.8 http-media-0.7.1.3 http-types-0.12.2 http2-1.6.4 \
