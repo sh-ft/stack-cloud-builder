@@ -10,7 +10,7 @@ RUN stack --resolver lts-12.26 build Cabal-2.2.0.1 HTTP-4000.3.12 HUnit-1.6.0.0 
   binary-0.8.5.1 blaze-builder-0.4.1.0 blaze-html-0.9.1.1 blaze-markup-0.8.2.2 bsb-http-chunked-0.0.0.4 byteable-0.1.1 \
   byteorder-1.0.4 bytes-0.15.5 bytestring-0.10.8.2 bytestring-builder-0.10.8.2.0 bytestring-lexing-0.5.0.2 \
   cabal-doctest-1.0.6 call-stack-0.1.0 case-insensitive-1.2.0.11 cassava-0.5.1.0 cereal-0.5.7.0 chunked-data-0.3.1 \
-  classy-prelude-1.4.0 clock-0.7.2 collector-0.1.0.0 colour-2.3.4 comonad-5.0.4 concurrent-extra-0.7.0.12 conduit-1.3.1 \
+  classy-prelude-1.4.0 clock-0.7.2 colour-2.3.4 comonad-5.0.4 concurrent-extra-0.7.0.12 conduit-1.3.1 \
   conduit-combinators-1.3.0 conduit-extra-1.3.0 connection-0.2.8 containers-0.5.11.0 contravariant-1.4.1 cookie-0.4.4 \
   cryptohash-md5-0.11.100.1 cryptohash-sha1-0.11.100.1 cryptonite-0.25 data-default-0.7.1.1 data-default-class-0.1.2.0 \
   data-default-instances-containers-0.0.1 data-default-instances-dlist-0.0.1 data-default-instances-old-locale-0.0.1 \
